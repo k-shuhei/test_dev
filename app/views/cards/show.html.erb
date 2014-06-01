@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>From:</strong>
+  <%= @card.from %>
+</p>
+
+<p>
+  <strong>To:</strong>
+  <%= @card.to %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @card.date %>
+</p>
+
+<p>
+  <strong>Kindness:</strong>
+  <%= @card.kindness %>
+</p>
+
+<p>
+  <strong>Thanks word:</strong>
+  <%= @card.thanks_word %>
+</p>
+
+<p>
+  <strong>Read:</strong>
+  <%= @card.read %>
+</p>
+
+<p>
+  <strong>Count:</strong>
+  <%= @card.count %>
+</p>
+
+<%= link_to 'Edit', edit_card_path(@card) %> |
+<%= link_to 'Back', cards_path %>
