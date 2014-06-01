@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140601021723) do
+ActiveRecord::Schema.define(version: 20140601115332) do
 
   create_table "cards", force: true do |t|
     t.integer  "from"
@@ -19,8 +19,8 @@ ActiveRecord::Schema.define(version: 20140601021723) do
     t.date     "date"
     t.string   "kindness"
     t.string   "thanks_word"
-    t.boolean  "read"
-    t.integer  "count"
+    t.boolean  "read",        default: false
+    t.integer  "count",       default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
